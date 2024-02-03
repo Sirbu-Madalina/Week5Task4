@@ -1,0 +1,24 @@
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square{
+    width: 250px;
+    height: 250px;
+    background-color: palevioletred;
+    position: absolute;
+    animation: bounce 1s infinite alternate;
+    box-shadow: 0px 85px 150px 0px rgb(210, 122, 137) ;
+}
+
+@keyframes bounce {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-100px);
+    }
+}
